@@ -1,1 +1,34 @@
-*.php linguist-detectable=false
+# Set the default behavior for text files
+* text=auto
+
+# Specify files that should always be treated as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.tar binary
+
+# Specify files that should always be treated as text
+*.php text
+*.html text
+*.css text
+*.js text
+*.json text
+
+# Ignore PHPStorm files
+.idea/ linguist-vendored
+
+# Ignore Composer files
+composer.lock export-ignore
+
+# Ignore Node.js files
+package-lock.json export-ignore
+
+# Ignore temporary files
+*.swp linguist-vendored
+
+# Specify merge strategies for specific files
+# For example, use "union" strategy for .xml files
+*.xml merge=union
+
